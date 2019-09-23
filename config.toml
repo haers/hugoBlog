@@ -183,9 +183,9 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     pagePV = true
 
   [params.reward]                                         # 文章打赏
-    enable = false
-    wechat = "/image/wechat-qr-code.png"           # 微信二维码
-    alipay = "/image/alipay-qr-code.png"           # 支付宝二维码
+    enable = true
+    wechat = "/images/reward/wechat.png"           # 微信二维码
+    alipay = "/images/reward/alipay.png"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
     a-email = "mailto:jingtingchangqing@gmail.com"
