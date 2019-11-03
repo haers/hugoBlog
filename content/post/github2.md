@@ -8,11 +8,11 @@ tags: [github]
 这个自己本来是发现这个图标怎么部署用域名访问后不安全了，然后图标还没了？
 
 <!--more-->
-![-w292](http://ws3.sinaimg.cn/large/006tNbRwly1fwkgv4sftjj30g803igm1.jpg)
+![-w292](https://i.loli.net/2019/11/03/Yynxb8oTVJUwAL6.jpg)
 菜单栏变成这种了
 半强迫症受不了，
 然后吧，抱着试一试的态度，说是github支持https了，然后点了个对号就ok了
 * 选择对应代码项目的settings，然后找到
-![-w823](http://ws4.sinaimg.cn/large/006tNbRwly1fwkgv6en79j319q0xw7e1.jpg)
+![-w823](https://i.loli.net/2019/11/03/oqUrwXdzmgeclIy.jpg)
 
 这里，把对号打上就全部解决啦！

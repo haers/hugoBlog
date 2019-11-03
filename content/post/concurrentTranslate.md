@@ -24,9 +24,9 @@ jdk版本:1.8
 
 
 ## 准备工作
-找到对应的concurrent包，单击右键，选择![](http://ws2.sinaimg.cn/large/006tNbRwly1fwkh0c5opmj30aw0hnabl.jpg)
+找到对应的concurrent包，单击右键，选择![](https://i.loli.net/2019/11/03/undxi9yotE8HwJD.jpg)
 下面的show diagram，然后生成了一个uml图
-![](http://ws1.sinaimg.cn/large/006tNbRwly1fwkh0d60n8j31390nyaff.jpg)
+![](https://i.loli.net/2019/11/03/Nu4yRfpFE5LkAJ6.jpg)
 
 有一个比较有毒的点，就是，内部的atomic和locks没有包含在里面，所以到时候单看，看的时候很清晰明了，比较大的几个“根”，executor，blockingqueue，delayed，future，concurrentmap。剩下的都比较单了，现在看起来就很清晰明了，是不。
 因此第一次做一个系列，有不足之处见谅。

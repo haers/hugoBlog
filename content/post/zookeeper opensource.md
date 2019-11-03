@@ -13,22 +13,22 @@ tags: [开源]
 * 不要使用master分支，自己使用的时候，有实现类冲突，不知道后续会解决没有，因此选择了稳定版本3.5.5
 * 去掉 zookeeper-server项目中pom文件中的两个jetty的scope，因为咱们运行的时候，还是使用的jetty服务器，所以得引入进来，要不然会报错
 
-![](https://i.loli.net/2019/07/18/5d3057eabaa9a31488.png)
+![](https://i.loli.net/2019/11/03/HXhvRjE9q3Cmupa.png)
 
 * 添加resources编译，因为要不然resources目录不会编辑进入class文件夹，日志就出不来，会有警告
 
-![](https://i.loli.net/2019/07/18/5d30586e058da63807.png)
+![](https://i.loli.net/2019/11/03/aHsDJxdITvAtobr.png)
 
 * copy 根目录下的conf下的log4j文件到zookeeper-server项目下的resources下
 * copy 根目录下的conf下的 zoo_sample.cfg到自己的文件目录下，修改端口最好，因为防止和brew搭建zookeeper冲突，可以更好的校验
 
 * 配置 zoo_sample.cfg 修改名字为 zoo.cfg，修改日志路径和端口如下：
 
-![](https://i.loli.net/2019/07/18/5d3059730262189597.png)
+![](https://i.loli.net/2019/11/03/SpOAK9aYCisNqcI.png)
 
 * 配置idea启动，就ok了，有日志显示
 
-![](https://i.loli.net/2019/07/18/5d3059bbf09f994251.png)
+![](https://i.loli.net/2019/11/03/HdE6LqrXlFp2DiO.png)
 
 * 测试
 
