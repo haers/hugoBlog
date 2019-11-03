@@ -29,12 +29,12 @@ Consider revisiting the conditions above or defining a bean of type 'org.springf
 
 只添加这一个是不行的，因为我们如果打开pom文件会发现，虽然引用了 spring-data-redis ，但是其中的两个driver 
 
-![500f7dd1d623e0017c4044689ebe9925](https://i.loli.net/2019/06/10/5cfe14be5538468970.jpg)
+![500f7dd1d623e0017c4044689ebe9925](http://ws2.sinaimg.cn/large/006tNc79ly1fzegugu6m8j30zy0i6wh6.jpg)
 
 都是option的，可选择的，所以在主要的项目中得指定一个redis客户端。
 从2.0开始，spring 默认使用的 lettuce 客户端，我们可以添加上他就ok了。
 
-![0ab3127c8689cbf40542219fd12643a8](https://i.loli.net/2019/06/10/5cfe14bea8d8e41984.jpg)
+![0ab3127c8689cbf40542219fd12643a8](http://ws4.sinaimg.cn/large/006tNc79ly1fzeguh87fvj31aw0a8mz3.jpg)
 
 如图所示，commons包也是option的，所以也得添加。
 如果想使用jedis客户端，那么就直接引用jedis客户端就行了，去掉截图中的两个引用。
@@ -45,7 +45,7 @@ ps：
 # 如果使用lettuce碰到连接超时的问题，RedisCommandTimeoutException
 那么将截图中的timeout配置项去掉就可以了。
 
-![28145be2d53fc6d26afe3d705e163369](https://i.loli.net/2019/06/10/5cfe14bf3084a95083.jpg)
+![28145be2d53fc6d26afe3d705e163369](http://ws1.sinaimg.cn/large/006tNc79ly1fzeguhw3ghj317p0u046q.jpg)
 
 # 说明一下
 最近比较忙，写了不少笔记，总结了很多东西，不少干活。近一年会主键开发。

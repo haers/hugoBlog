@@ -16,7 +16,7 @@ tags: [github,godaddy]
 * 一条a记录，配置成服务器的ip地址，这个ip地址，需要自己ping自己的github的博客地址得到，不要随便抄袭别人的教程上的，没用的，因为这东西老变。
 * 一条CNAME记录，配置的自己的	xxx.github.io
 然后剩下的ns记录不动，我其余的都删除了
-![-w1113](https://i.loli.net/2019/06/10/5cfe14ce0348b49105.jpg)
+![-w1113](http://ws3.sinaimg.cn/large/006tNbRwly1fwkh09al39j31kw0kgtbq.jpg)
 然后等了一会，我也不知道多久吧，今天给这个搞的恼火，吃完月饼，躺了一会，起来就想通了。
 
 ## 验证
@@ -29,12 +29,12 @@ https://segmentfault.com/a/1190000005775893
 https://segmentfault.com/a/1190000011203711
 核心思想就是，服务器得有域名的配置，域名得有服务器的配置，要不怎么说github强大呢，啥都干！
 ## dns解析，a记录和chame的区别
-![](https://i.loli.net/2019/06/10/5cfe14ce5275955922.jpg)
-![](https://i.loli.net/2019/06/10/5cfe14ceac42d47888.jpg)
+![](http://ws3.sinaimg.cn/large/006tNbRwly1fwkkouvx48j30hu0be76q.jpg)
+![](http://ws1.sinaimg.cn/large/006tNbRwly1fwkkokb9goj30hv0af40l.jpg)
 这两张图片用的别人的（侵权删，看看人家tx，都给你写的明明白白，看go啥的没写）
 
 ## 发现的好用的工具
-![-w715](https://i.loli.net/2019/06/10/5cfe14cf06cf467371.jpg)
+![-w715](http://ws3.sinaimg.cn/large/006tNbRwly1fwkh0b1uigj313q0f877p.jpg)
 在验证的过程中吧，为了验证自己的猜测，我就去抓别人博客的ip地址，进行验证，然后就知道他们也是挂载到github了，然后再去github参考一下，就明白了。http://www.ip138.com
 
 

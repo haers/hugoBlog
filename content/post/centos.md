@@ -15,7 +15,7 @@ tags: [system,centos]
 华硕电脑选择F2
 然后调整boot顺序
 然后到如下页面后
-![](https://i.loli.net/2019/06/10/5cfe14c02c42276143.jpg)
+![](http://ws4.sinaimg.cn/large/6f9556baly1fxb5327zboj20ne04umxn.jpg)
 
 这一步的时候，网上教程说是按着e编辑，我这按了好久不行，结果发现是table键，有英文提示，然后将
 vmlinuz initrd=initrd.img inst.stage2=hd:LABEL=CentOS\x207\x20x86_64 quiet
@@ -24,7 +24,7 @@ vmlinuz initrd=initrd.img linux dd quiet
 
 然后按回车就行
 这里显示的硬盘的信息
-![](https://i.loli.net/2019/06/10/5cfe14c5d361425462.jpg)
+![](http://ws4.sinaimg.cn/large/6f9556baly1fxb53291gaj20rb08j0v2.jpg)
 
 网上的图，我的是sdb4
 使用ctrl alt del重启不行，然后我就关了电源，继续进入，然后按住table，编辑如下
@@ -33,23 +33,23 @@ vmlinuz initrd=initrd.img inst.stage2=hd:LABEL=CentOS\x207\x20x86_64 quiet
 改成
 vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sda4（上一步查看的你自己的U盘盘符） quiet
 然后按回车就ok了。
-![](https://i.loli.net/2019/06/10/5cfe14c63440086816.jpg)
+![](http://ws1.sinaimg.cn/large/6f9556baly1fxb53292u4j20m80gogp0.jpg)
 
 1，2，3都默认好了，中文的，
 4的话，我选择了gnome桌面，毕竟方便看一些
-![](https://i.loli.net/2019/06/10/5cfe14c6ab20498329.jpg)
+![](http://ws3.sinaimg.cn/large/6f9556baly1fxb53291z7j20m80gojvo.jpg)
 
-![](https://i.loli.net/2019/06/10/5cfe14c70846f87546.jpg)
+![](http://ws3.sinaimg.cn/large/6f9556baly1fxb5328zadj20m80gojul.jpg)
 
 5的话，我选择的自动分区，比较懒。。。
-![](https://i.loli.net/2019/06/10/5cfe14c756cc729101.jpg)
+![](http://ws4.sinaimg.cn/large/6f9556baly1fxb5328jhhj20m80gojul.jpg)
 
 6这里的话，选择一下wifi或者有线
-![](https://i.loli.net/2019/06/10/5cfe14cd5dad627105.jpg)
+![](http://ws2.sinaimg.cn/large/6f9556baly1fxb53354hxj20m80gotbd.jpg)
 
 开始安装吧
 然后下一步设置一下密码就ok了。最好别用大写，有时间会坑，因为这个切换大小写忘了之后就完了。我就是找了好久发现一个本来应该小写的结果大写了，密码都搞错了，后来修改了。
-![](https://i.loli.net/2019/06/10/5cfe14cda21f164895.jpg)
+![](http://ws1.sinaimg.cn/large/6f9556baly1fxb5331pxnj20m80gomz6.jpg)
 
 记得！！！拔掉u盘，然后就ok了。
 

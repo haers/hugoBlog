@@ -13,6 +13,6 @@ Windows这种：用teamviewer足够了，也可以做映射，比如做为自己
 电脑重装成centos，需要远程访问，需要暴漏ip地址，但是外网的ip是活动的，因此需要使用第三方服务器，最快捷的就是使用花生壳，6块钱买个服务。
 简单说一下步骤：
 ## 按照网址http://service.oray.com/question/4287.html 注册，然后购买内网穿透，有一点就是映射列表添加的时候内网主机写127.0.0.1
-![](https://i.loli.net/2019/06/10/5cfe14bda5eb392865.jpg)
+![](http://ws3.sinaimg.cn/large/6f9556baly1fxb9a270qcj20sx0gadhi.jpg)
 
 ## 自己远程ssh的时候，用户名密码记得写自己服务器的用户名，密码。

@@ -7,10 +7,10 @@ tags: [图床,新浪图床]
 ## 背景
 原来按照好多教程，使用了七牛云的图床，不错，但是正因为是免费的，域名失效了！！！然后图片全都不行了，只能寻找新的图床，历经挫折。下面将我的解决方案分享出来；
 <!--more-->
-![](https://i.loli.net/2019/06/10/5cfe14c5854dc16640.jpg)
+![](http://ws3.sinaimg.cn/large/6f9556baly1fwlet9xcxej20z90eowgi.jpg)
 
 亏我当时还起的名字我爱七牛
-![](https://i.loli.net/2019/06/10/5cfe14c5d370269256.jpg)
+![](http://ws1.sinaimg.cn/large/6f9556baly1fwlet9twp9j211o0b7dh5.jpg)
 
 我这没有beian的域名绑定这个干啥，很麻烦。。。图片还能访问（不知道是否因为cdn的关系），就是上传不了。 
 环境：
@@ -20,13 +20,13 @@ mweb
 ## 解决方案
 ### 新浪图床
 本来找了一个github的代码，自己本地起个服务，但是，后来坐着没更新了，npm编译失败，版本的问题，js又不太熟悉，只能另寻办法，php代码不少，但是也看不懂，最后终于用关键词在github上找了一个java代码，2018版本的，然后试了一下ok【源码的方案，我会改进的，由于新浪没有公开提供api，都是抓取的】。不过后来又找了一下，有了新的解决方案；
- ![](https://i.loli.net/2019/06/10/5cfe14c63cb2588687.jpg)
+ ![](http://ws2.sinaimg.cn/large/6f9556baly1fwlet9o7ygj20e2051glz.jpg)
 
 使用ipic软件，下载下来之后，安装mover插件，不付费版本只有新浪图床，够用了，其他的图床有别的解决方案（因为都api都开发，很好写）
     使用ipicMover扫描之后，可以将我这七牛的迁移过来
-    ![-w681](https://i.loli.net/2019/06/10/5cfe14c6c43be14537.jpg)
+    ![-w681](http://ws1.sinaimg.cn/large/6f9556baly1fwletad1bzj211u0mowqb.jpg)
     因此，对于我来说，在mweb写完博客之后，使用mweb上传到新浪（可以使用代码），然后copy包含新浪地址的md到hexo中（因为自己都是保留原图到Dropbox中的）。
-    ![-w747](https://i.loli.net/2019/06/10/5cfe14c7abe0990777.jpg)
+    ![-w747](http://ws1.sinaimg.cn/large/6f9556baly1fwleta2zzlj215i09i425.jpg)
     然后直接提交代码就ok了。（上图就是替换七牛的地址）
     
     如果没有本地新浪api上传的话，可以copy这个文章，然后使用ipic扫描，这样的话就会替换地址，然后copy到hexo中就ok了。
@@ -37,13 +37,13 @@ mweb
 ## 如何选择图床
  因为自己的服务器是github，因此尽量内网和外网都能访问
  http://bangumi.tv/group/topic/343056 这个网址是作者评测，就是没有小电视的国内访问不了。所以，想自己定义api的可以使用这些图床
- ![](https://i.loli.net/2019/06/10/5cfe14cda669089858.jpg)
+ ![](http://ws1.sinaimg.cn/large/6f9556baly1fwlet9znmtj20qf0fjmzx.jpg)
  像上图好多都是免费的，极简图床，api是收费的。如果懂代码的话，建议自己开发一下。不算难。
     
 ## 好用的一些网址，以及自己怎么使用这些图床
 catbox.moe 这个自己实现了文件上传，最笨的方法，就是Chrome开启开发组模式，然后使用postman模拟，然后copypostman的code（postman是可以根据语言生成代码的），后来发现对方开放了api；
 
-![](https://i.loli.net/2019/06/10/5cfe14cdec05575999.jpg)
+![](http://ws1.sinaimg.cn/large/6f9556baly1fwletaf5qej20vl07pt9q.jpg)
 
 
 
