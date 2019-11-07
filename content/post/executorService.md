@@ -6,11 +6,25 @@ tags: [并发,concurrency,executorService]
 ---
 
 ## 类翻译
+
 一个executor 可以提供方法来处理终止和产生一个 future 来记录一个或多个异步任务的进度。（mark，executor目前只是一个接口，目前还做不到。。。）
-一个executorService可以被关闭，这将会导致它拒绝新的任务。ExecutorServie提供了两个关闭方法。shutdown 方法在终止之前允许先前提交的任务执行完。shutdownNow 方法阻止等待的任务启动 并且尝试停止当前正在执行的任务。一旦终止，Executor没有执行中的任务，没有等待中的任务，没有新任务可以提交。<!--more-->一个未被使用的ExecutorService应该被关闭来回收它的资源。
-submit 方法扩展了 Executor的基本方法 execute，通过创建并返回Future，Future可以用来取消执行 和/或者 等待（执行）完成。invokeAny 和 invokeAll 方法 是执行最通用的，有用的集合执行形式。执行集合任务，然后等待至少一个或全部完成。ExecutorCompletionService可以被用来编写这些方法的定制变体。
+
+一个executorService可以被关闭，这将会导致它拒绝新的任务。
+
+ExecutorServie提供了两个关闭方法。shutdown 方法在终止之前允许先前提交的任务执行完。shutdownNow 方法阻止等待的任务启动 并且尝试停止当前正在执行的任务。一旦终止，Executor没有执行中的任务，没有等待中的任务，没有新任务可以提交。
+<!--more-->
+
+一个未被使用的ExecutorService应该被关闭来回收它的资源。
+
+submit 方法扩展了 Executor的基本方法 execute，通过创建并返回Future，Future可以用来取消执行 和/或者 等待（执行）完成。
+
+invokeAny 和 invokeAll 方法 是执行最通用的，有用的集合执行形式。执行集合任务，然后等待至少一个或全部完成。
+
+ExecutorCompletionService可以被用来编写这些方法的定制变体。
 Executors 为executor Service提供了方便的工厂方法。（mark：executor是也为executor提供了工厂）
+
 使用示例：
+
 这里有一个网络服务的草图，其中线程在线程池中来处理请求，他使用了预配置工厂方法（newFixedThreadPool）。
 
 ```
@@ -46,7 +60,9 @@ Executors 为executor Service提供了方便的工厂方法。（mark：executor
 ```
 
 
-以下方法分为两个阶段关闭 ExecutorService，第一步通过 shutdown 来拒绝传入的任务，然后调用 shutdownNow ，如果必要的话，可以用来取消任何延迟任务。
+以下方法分为两个阶段关闭 ExecutorService，第一步通过 
+
+shutdown 来拒绝传入的任务，然后调用 shutdownNow ，如果必要的话，可以用来取消任何延迟任务。
 
 ```
  *  <pre> {@code
@@ -68,8 +84,10 @@ Executors 为executor Service提供了方便的工厂方法。（mark：executor
  *   }
  * }}</pre>
 ```
+
 内存一致性效果：和executor一样。
 
 ## 方法
+
 todo 最近时间比较紧，尽力而为
 

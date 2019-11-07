@@ -6,15 +6,23 @@ categories: [oss,License]
 tags: [开源]
 ---
 ## 背景
+
 想开源自己的代码了
+
 <!--more-->
+
 ## 怎么配置开源协议
+
 1.自己的协议，放到项目根目录下
+
 2.如果是整个文件包都是引用的，那么根目录放上协议
+
 3.后续如果可以的话对应的类也要搞一下，写上协议
 
 ## 参考文章
+
 ![](https://i.loli.net/2019/11/03/DHzGhrsAYcTwEZ3.jpg)
 
-https://www.jianshu.com/p/cceeafb019ed 
-https://segmentfault.com/q/1010000000126507
+* [开源许可协议了解这些就够了](https://www.jianshu.com/p/cceeafb019ed)
+* [自己的项目如果包含别人的开源代码，licence文件应放在哪里](https://segmentfault.com/q/1010000000126507)
+
